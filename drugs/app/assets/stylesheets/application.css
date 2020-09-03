@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+    color: black  !important;
+    background-color: #1b262c !important;
+  }
+h1{
+    padding-top: 10% !important;
+    padding-bottom: 8% !important;
+    text-align: center !important;
+    font-size: 500%  !important;
+    color: #3282b8  !important;
+    font-family: 'PT Sans', sans-serif !important;
+}
+  
+  .big-col{
+    text-align: center !important;
+  }
+  
+  .max_button_size{
+    width: 20% !important;
+  }
+  .centered{
+    align-items: center !important;
+  }
+  
+  h3{
+    color: #3282b8 !important;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+    font-size: 250%
+  }
+  
+  
+  label {
+      cursor: pointer !important;
+  }
+  input{
+    position: fixed !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  input:checked + label{
+      background-color: #007bff !important;
+      color: white !important;
+  }
+
+  
+.show{
+  display:block !important;
+	position:absolute !important;
+}
+  

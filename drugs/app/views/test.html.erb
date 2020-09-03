@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" language="javascript">
+    <!-- Hide from browsers without javascript
+    
+    window.onload=function() 
+    {
+      setTimeout(func1, 200); 
+      
+    };
+    function func1()
+    {
+      document.getElementById("drug1").classList.remove("hide");
+
+    }
+    
+    // End hiding -->
+    </script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="animate__animated animate__fadeIn animate__slower 1s">Drug Interaction Safety Checker</h1>
+    </div>
+
+
+
+    <div class="container big-col">
+      <div class="row big-col">
+        <div class="col-sm big-col">
+          <h3>Select Drug #1</h3>
+          <form action="/result" method="get">
+        
+            <input type="radio" id="drug1" name="primary" value="LSD">
+            <label class="btn btn-lg btn-outline-primary" for="drug1">LSD</label>
+
+            <input type="radio" id="drug2" name="primary" value="Mushrooms">
+            <label class="btn btn-lg btn-outline-primary" for="drug2">Mushrooms</label>
+
+            <input type="radio" id="drug3" name="primary" value="DMT">
+            <label class="btn btn-lg btn-outline-primary" for="drug3">DMT</label>
+
+            <input type="radio" id="drug4" name="primary" value="Mescaline">
+            <label class="btn btn-lg btn-outline-primary" for="drug4">Mescaline</label>
+
+            <input type="radio" id="drug5" name="primary" value="DOx">
+            <label class="btn btn-lg btn-outline-primary" for="drug5">DOx</label>
+
+            <input type="radio" id="drug6" name="primary" value="NBOMe">
+            <label class="btn btn-lg btn-outline-primary" for="drug6">NBOMe</label>
+
+            <input type="radio" id="drug7" name="primary" value="2C-x">
+            <label class="btn btn-lg btn-outline-primary" for="drug7">2C-x</label>
+
+            <input type="radio" id="drug8" name="primary" value="2C-T-x">
+            <label class="btn btn-lg btn-outline-primary" for="drug8">2C-T-x</label>
+
+            <input type="radio" id="drug9" name="primary" value="5-Meo-xxT">
+            <label class="btn btn-lg btn-outline-primary" for="drug9">5-Meo-xxT</label>
+
+            <input type="radio" id="drug10" name="primary" value="Cannabis">
+            <label class="btn btn-lg btn-outline-primary" for="drug10">Cannabis</label>
+
+            <input type="radio" id="drug11" name="primary" value="Ketamine">
+            <label class="btn btn-lg btn-outline-primary" for="drug11">Ketamine</label>
+
+            <input type="radio" id="drug12" name="primary" value="MXE">
+            <label class="btn btn-lg btn-outline-primary" for="drug12">MXE</label>
+
+            <input type="radio" id="drug13" name="primary" value="DXM">
+            <label class="btn btn-lg btn-outline-primary" for="drug13">DXM</label>
+
+            <input type="radio" id="drug14" name="primary" value="Nitrous">
+            <label class="btn btn-lg btn-outline-primary" for="drug14">Nitrous</label>
+
+            <input type="radio" id="drug15" name="primary" value="Amphetamines">
+            <label class="btn btn-lg btn-outline-primary" for="drug15">Amphetamines</label>
+
+            <input type="radio" id="drug16" name="primary" value="MDMA">
+            <label class="btn btn-lg btn-outline-primary" for="drug16">MDMA</label>
+
+            <input type="radio" id="drug17" name="primary" value="Cocaine">
+            <label class="btn btn-lg btn-outline-primary" for="drug17">Cocaine</label>
+
+            <input type="radio" id="drug18" name="primary" value="Caffeine">
+            <label class="btn btn-lg btn-outline-primary" for="drug18">Caffeine</label>
+
+            <input type="radio" id="drug19" name="primary" value="Alcohol">
+            <label class="btn btn-lg btn-outline-primary" for="drug19">Alcohol</label>
+
+            <input type="radio" id="drug20" name="primary" value="GHB/GBL">
+            <label class="btn btn-lg btn-outline-primary" for="drug20">GHB/GBL</label>
+
+            <input type="radio" id="drug21" name="primary" value="Opioids">
+            <label class="btn btn-lg btn-outline-primary" for="drug21">Opioids</label>
+
+            <input type="radio" id="drug22" name="primary" value="Tramadol">
+            <label class="btn btn-lg btn-outline-primary" for="drug22">Tramadol</label>
+
+            <input type="radio" id="drug23" name="primary" value="Benzodiazepines">
+            <label class="btn btn-lg btn-outline-primary" for="drug23">Benzodiazepines</label>
+
+            <input type="radio" id="drug24" name="primary" value="MAOIs">
+            <label class="btn btn-lg btn-outline-primary" for="drug24">MAOIs</label>
+            
+            <input type="radio" id="drug25" name="primary" value="SSRIs">
+            <label class="btn btn-lg btn-outline-primary" for="drug25">SSRIs</label>
+          </div>
+          <br>
+          <div class="col-sm big-col">
+            <h3>Select Drug #2  </h3>
+
+            <input type="radio" id="drug26" name="secondary" value="LSD">
+            <label class="btn btn-lg btn-outline-primary" for="drug26">LSD</label>
+
+            <input type="radio" id="drug27" name="secondary" value="Mushrooms">
+            <label class="btn btn-lg btn-outline-primary" for="drug27">Mushrooms</label>
+
+            <input type="radio" id="drug28" name="secondary" value="DMT">
+            <label class="btn btn-lg btn-outline-primary" for="drug28">DMT</label>
+
+            <input type="radio" id="drug29" name="secondary" value="Mescaline">
+            <label class="btn btn-lg btn-outline-primary" for="drug29">Mescaline</label>
+
+            <input type="radio" id="drug30" name="secondary" value="DOx">
+            <label class="btn btn-lg btn-outline-primary" for="drug30">DOx</label>
+
+            <input type="radio" id="drug31" name="secondary" value="NBOMe">
+            <label class="btn btn-lg btn-outline-primary" for="drug31">NBOMe</label>
+
+            <input type="radio" id="drug32" name="secondary" value="2C-x">
+            <label class="btn btn-lg btn-outline-primary" for="drug32">2C-x</label>
+
+            <input type="radio" id="drug33" name="secondary" value="2C-T-x">
+            <label class="btn btn-lg btn-outline-primary" for="drug33">2C-T-x</label>
+
+            <input type="radio" id="drug34" name="secondary" value="5-Meo-xxT">
+            <label class="btn btn-lg btn-outline-primary" for="drug34">5-Meo-xxT</label>
+
+            <input type="radio" id="drug35" name="secondary" value="Cannabis">
+            <label class="btn btn-lg btn-outline-primary" for="drug35">Cannabis</label>
+
+            <input type="radio" id="drug36" name="secondary" value="Ketamine">
+            <label class="btn btn-lg btn-outline-primary" for="drug36">Ketamine</label>
+
+            <input type="radio" id="drug37" name="secondary" value="MXE">
+            <label class="btn btn-lg btn-outline-primary" for="drug37">MXE</label>
+
+            <input type="radio" id="drug38" name="secondary" value="DXM">
+            <label class="btn btn-lg btn-outline-primary" for="drug38">DXM</label>
+
+            <input type="radio" id="drug39" name="secondary" value="Nitrous">
+            <label class="btn btn-lg btn-outline-primary" for="drug39">Nitrous</label>
+
+            <input type="radio" id="drug40" name="secondary" value="Amphetamines">
+            <label class="btn btn-lg btn-outline-primary" for="drug40">Amphetamines</label>
+
+            <input type="radio" id="drug41" name="secondary" value="MDMA">
+            <label class="btn btn-lg btn-outline-primary" for="drug41">MDMA</label>
+
+            <input type="radio" id="drug42" name="secondary" value="Cocaine">
+            <label class="btn btn-lg btn-outline-primary" for="drug42">Cocaine</label>
+
+            <input type="radio" id="drug43" name="secondary" value="Caffeine">
+            <label class="btn btn-lg btn-outline-primary" for="drug43">Caffeine</label>
+
+            <input type="radio" id="drug44" name="secondary" value="Alcohol">
+            <label class="btn btn-lg btn-outline-primary" for="drug44">Alcohol</label>
+
+            <input type="radio" id="drug45" name="secondary" value="GHB/GBL">
+            <label class="btn btn-lg btn-outline-primary" for="drug45">GHB/GBL</label>
+
+            <input type="radio" id="drug46" name="secondary" value="Opioids">
+            <label class="btn btn-lg btn-outline-primary" for="drug46">Opioids</label>
+
+            <input type="radio" id="drug47" name="secondary" value="Tramadol">
+            <label class="btn btn-lg btn-outline-primary" for="drug47">Tramadol</label>
+
+            <input type="radio" id="drug48" name="secondary" value="Benzodiazepines">
+            <label class="btn btn-lg btn-outline-primary" for="drug48">Benzodiazepines</label>
+
+            <input type="radio" id="drug49" name="secondary" value="MAOIs">
+            <label class="btn btn-lg btn-outline-primary" for="drug49">MAOIs</label>
+            
+            <input type="radio" id="drug50" name="secondary" value="SSRIs">
+            <label class="btn btn-lg btn-outline-primary" for="drug50">SSRIs</label>
+          </div> 
+        
+      </div>
+    </div>
+
+    <div class="container big-col">
+      <div class="row big-col">
+        <div class="col-sm big-col">
+            <input type="submit" id='test' value="Submit">
+            <label class="btn btn-lg btn-outline-primary" for="test">Submit</label>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

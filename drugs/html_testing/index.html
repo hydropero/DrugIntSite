@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="animate__animated animate__fadeIn animate__slower 1s">Drug Interaction Safety Checker</h1>
+    </div>
+
+
+    <form action="/result">
+      <p>Please select your gender:</p>
+      <input type="radio" id="drug1" name="primary" value="Cannabis">
+      <label class="btn btn-lg btn-outline-primary" for="drug1">Cannabis</label>
+      <input type="radio" id="drug2" name="primary" value="Cannabis">
+      <label class="btn btn-lg btn-outline-primary" for="drug2">Alcohol</label>
+      <input type="radio" id="drug3" name="primary" value="other">
+      <label class="btn btn-lg btn-outline-primary" for="drug3">Ketamine</label>
+      <input type="submit" value="Submit">
+    </form>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm big-col">
+          <h3>Select Drug #1</h3>
+          <form action="/action_page.php" method="get">
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary" value='LSD'>LSD</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Mushrooms</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">DMT</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Mescaline</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">DOx</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">NBOMe</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">2C-x</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">2C-T-x</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">5-Meo-xxT</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Cannabis</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Ketamine</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">MXE</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">DXM</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Nitrous</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Amphetamines</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">MDMA</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Cocaine</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Caffeine</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Alcohol</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">GHB/GBL</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Opiods</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Tramadol</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Benzodiazepines</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">MAOIs</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">SSRIs</button>
+
+        </div>
+        <div class="col-sm big-col">
+          <h3>Select Drug #2  </h3>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">LSD</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Mushrooms</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">DMT</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Mescaline</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">DOx</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">NBOMe</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">2C-x</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">2C-T-x</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">5-Meo-xxT</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Cannabis</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Ketamine</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">MXE</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">DXM</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Nitrous</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Amphetamines</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">MDMA</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Cocaine</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Caffeine</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Alcohol</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">GHB/GBL</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Opiods</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Tramadol</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">Benzodiazepines</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">MAOIs</button>
+          <button type="submit" name="selection1" class="btn btn-lg btn-outline-primary">SSRIs</button>
+        </div>
+      </form>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
