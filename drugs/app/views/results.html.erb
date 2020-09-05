@@ -5,5 +5,19 @@
 <h2>You selected <%=@result1%> + <%=@result2%>!</h2>
 
 <h3>This combination presents => <%=@print_value%></h3>
+<h3> <%= @regex_result %> </h3>
+<h3> Number of Regex Matches: <%= @regex_result %>  </h3>
+<ul>
+ <% @parsed_data.each do |this| %>
+    
+    <li> <%= this  %> </li>
+ <% end %>
+</ul>
 
-<h4><%=@parsed_data</h4>
+<div class="container big-col">
+      <div class="row big-col">
+        <div class="col-sm big-col">
+            <h5>testing</h5>
+        </div>
+      </div>
+</div>

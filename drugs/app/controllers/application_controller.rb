@@ -7,9 +7,11 @@ class ApplicationController < ActionController::Base
   def results
     require 'httparty'
     require 'json'
-    @result1 = params.fetch("primary")
-    @result2 = params.fetch("secondary")
+    result1 = params.fetch("primary")
+    result2 = params.fetch("secondary")
 
+    @result1 = result1
+    @result2 = result2
     # LSD results
     final_value = ''
     if @result1 == 'LSD' &&  @result2 == 'Mushrooms' || @result2 == 'LSD' &&  @result1 == 'Mushrooms'
@@ -573,10 +575,10 @@ class ApplicationController < ActionController::Base
       request["Dnt"] = "1"
       request["Origin"] = "https://api.psychonautwiki.org"
       request.body = JSON.dump({
-        "query" => "{ substances { name } }"
+        "query" => '{substances(limit: 1000) { name } }'
       })
 
-      req_options = {
+      req_options = { 
         use_ssl: uri.scheme == "https",
       }
 
@@ -584,14 +586,35 @@ class ApplicationController < ActionController::Base
         http.request(request)
       end
       response = JSON.parse(response.body)
-      response = response.fetch("data").fetch('substances')
+      #response = response.fetch("data").fetch('substances')
       arrayed = []
+      #response = response.each_with_index do |this, index|
+      #  arrayed.push(this.fetch('name'))
+      #end
+      response = response.fetch("data")
+      response = response.fetch("substances")
       response = response.each_with_index do |this, index|
         arrayed.push(this.fetch('name'))
       end
+      @regex_match_array1 = []
+
 
       @parsed_data = arrayed
 
+
+      
+
+
+      @parsed_data.each do |items|
+        @regex_result1 = /^2[Cc].+/.match(items)
+        if @regex_result1.to_s.length >= 2
+          then @regex_match_array1.push(items)
+        end
+      end
+
+      
+      
+      @regex_result = @regex_match_array1
       render({ :template => 'results.html.erb'})
     
   end
